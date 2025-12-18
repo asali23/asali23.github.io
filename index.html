@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asad Ali Amjad - Software Engineer</title>
     <style>
+        :root {
+        --bg: #ffffff;
+        --fg: #111111;
+        --muted: #555555;
+        --border: #000000;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f1115;
+                --fg: #e6e6e6;
+                --muted: #a0a0a0;
+                --border: #888888;
+            }
+        }
         body {
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 50px;
-            background-color: #f4f4f4;
+            background-color: var(--bg);
+            color: var(--fg);
         }
         h1 {
-            color: #333;
+            color: var(--fg);
         }
         p {
             font-size: 18px;
@@ -34,7 +49,7 @@
 </head>
 <body>
     <h1>Asad Ali Amjad</h1>
-    <p>Experienced Software Engineer specializing in Embedded Systems, RTOS, and Automation</p>
+    <p>Experienced Software Engineer specializing in Embedded Systems, RTOS, Automation and Backend Development</p>
     <a href="resume.html">View Resume</a>
     <a href="https://github.com/asali23">GitHub</a>
     <a href="https://www.linkedin.com/in/asad-ali-amjad-4b1004224/">LinkedIn</a>

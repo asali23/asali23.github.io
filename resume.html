@@ -5,209 +5,204 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Asad Ali Amjad – Resume</title>
 <style>
-:root {
-  --bg: #ffffff;
-  --fg: #111111;
-  --muted: #555555;
-  --border: #000000;
-}
-@media (prefers-color-scheme: dark) {
+  /* Light mode variables */
   :root {
-    --bg: #0f1115;
-    --fg: #e6e6e6;
-    --muted: #a0a0a0;
-    --border: #888888;
+    --bg-color: #f4f4f4;
+    --text-color: #333;
+    --h1-bg: #ddeeff;
+    --h2-bg: #eef4fa;
+    --h3-bg: #f7f9fc;
+    --heading-text-color: #000;
+    --link-color: #0056b3;
+    --border-color: #ddd;
   }
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-  background: var(--bg);
-  color: var(--fg);
-  line-height: 1.35;
-}
-.main {
-  max-width: 900px;
-  margin: 32px auto;
-  padding: 0 24px 48px;
-}
-.header {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 20px;
-  align-items: center;
-  margin-bottom: 28px;
-}
-.photo {
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
-}
-.name { font-size: 30px; font-weight: 700; }
-.title { font-size: 17px; margin: 4px 0 10px; }
-.contact, .location { font-size: 14px; color: var(--muted); }
-a {color: darkgreen;}
-section { margin-top: 28px; }
-section h2 {
-  font-size: 15px;
-  font-weight: 700;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 4px;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-p { margin: 6px 0; }
-ul { margin: 6px 0 8px 20px; padding: 0; font-size: 14px; }
-ul li { margin-bottom: 4px; }
-.job { margin-bottom: 18px; }
-.job-header {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  font-weight: 600;
-  font-size: 14px;
-}
-.job-subheader {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  font-size: 14px;
-  color: var(--muted);
-  margin-bottom: 6px;
-}
-.skills-inline { font-size: 13px; color: var(--muted); }
+
+  /* Dark mode variables */
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: #1a1a1a;
+      --text-color: #e0e0e0;
+      --h1-bg: #2c3e50;
+      --h2-bg: #233140;
+      --h3-bg: #1c2833;
+      --heading-text-color: #e0e0e0;
+      --link-color: #82aaff;
+      --border-color: #444;
+    }
+  }
+
+  body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px auto;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    max-width: 960px;
+  }
+  h2, h3 {
+    color: var(--heading-text-color);
+    padding: 0.5em;
+  }
+  h2 { background-color: var(--h2-bg); }
+  h3 { background-color: var(--h3-bg); }
+
+  .contact-info {
+    margin-bottom: 20px;
+  }
+  .section {
+    margin-bottom: 20px;
+  }
+  table, th, td {
+    border: none;
+    border-collapse: collapse;
+  }
+  td {
+    padding: 8px;
+    text-align: left;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  a {
+    color: var(--link-color);
+  }
+  .job-title {
+    float: left;
+  }
+  .job-date {
+    float: right;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 </style>
 </head>
 <body>
-<div class="main">
-<div class="header">
-<img class="photo" src="https://avatars.githubusercontent.com/asali23" alt="Asad Ali Amjad" />
-<div>
-<div class="name">Asad Ali Amjad</div>
-<div class="title">Experienced Software Engineer</div>
-<div class="contact"><a href="tel:+923214202636">+92 32 1420 2636</a> | <a href="mailto:asad.ali.amjad@gmail.com">asad.ali.amjad@gmail.com</a></div>
-<div class="contact"><a href="https://www.linkedin.com/in/asad-ali-amjad-4b1004224/">LinkedIn.com/in/asad-ali-amjad-4b1004224</a></div>
-<div class="contact">Profile: <a href="https://asali23.github.io/asad.ali.amjad.github.io">https://asali23.github.io/asad.ali.amjad.github.io</a></div>
-<div class="location">Islamabad, Pakistan</div>
+<div style="background-color: var(--h2-bg); padding-left: 10px; padding-right: 10-px; padding-top: 10px; padding-bottom: 0px" class="clearfix">
+<img src="https://avatars.githubusercontent.com/asali23" alt="Asad Ali Amjad" style="width: 128px;height:128px;float:right;margin-right:10px;margin-bottom:8px;border-radius: 50%;" />
+<h1>Asad Ali Amjad</h1>
+<strong style="border-top: 5px solid var(--border-color); border-bottom: 5px solid var(--border-color); padding-top: 10px; padding-bottom: 10px;">ENTERPRISE SOFTWARE ARCHITECTURE | SCALABILITY & SECURITY | AUTOMATION, CI/CD, DEVOPS</strong>
+<p>Islamabad, Pakistan  |  +92 321 420 2636  |  asad.ali.amjad@gmail.com  |  LinkedIn: <a href="https://www.linkedin.com/in/AsadAliAmjad/">AsadAliAmjad</a> | GitHub: <a href="https://github.com/asali23">asali23</a></p>
 </div>
-</div>
-<section>
-<h2>Summary</h2>
-<p>Experienced professional software engineer with 13+ years experience in software development, specializing in embedded systems, <a href="https://en.wikipedia.org/wiki/Nucleus_RTOS">Nucleus RTOS</a>, Embedded Linux, SSL and Graphics. Proven expertise in security enhancements, automation and hardware integration across diverse platforms. Recognized for technical excellence, leadership and collaborative problem-solving.</p>
-</section>
-<section>
-<h2>Technical Skills</h2>
-<p>C | C++ | Linux | Embedded | Nucleus | RTOS | TCP/UDP/IP | Device Driver | Makefile | Perl | Python | Flask | Jenkins | Shell Scripts | Qt for MCUs | Qt Open Source | Qt QML | Qt C++ Widgets | OpenGL ES | OpenGL | GLSL | Android | <a href="https://llamalab.com/automate/">Automate</a> | OpenCV | Java | Eclipse CDT | C# | ASP.NET | Windows Forms | <a href="https://github.com/judero01col/GMap.NET.git">GMap.NET</a> | <a href="https://github.com/SlimDX/SlimDX-v2.git">SlimDX</a> | SVN | Git | Jira | Confluence | Agile | Scrum | Chromium | Playwright | REST API | OpenAPI | WebSockets | Docker</p>
-</section>
-<section>
-<h2>Work Experience</h2>
-<div class="job">
-<div class="job-header"><div>Afiniti – Full-time</div><div>Jun 2024 – Dec 2025</div></div>
-<div class="job-subheader"><div>Lead Software Engineer</div><div>Islamabad, Pakistan</div></div>
+<p>Results-driven Enterprise Software Architect with 13+ years of experience overseeing the design, development, and delivery of full-stack software, embedded systems, and enterprise automation solutions. Track record in architecting scalable and high-performance systems. Expert in C, C++, C#, Python, Qt applications, OpenGL, Linux, Nucleus RTOS, Jenkins, and automation frameworks, with a history of resolving technical challenges and driving operational efficiency. Recognised for mentoring teams, executing CI/CD pipelines, automating workflows, and delivering maintainable architectures aligned with business objectives.</p>
+<h2>Relevant Skills &amp; Knowledge</h2>
+<table>
+  <tr>
+    <td>Software Development Lifecycle (SDLC)</td>
+    <td>Real-Time Communication Systems</td>
+    <td>Data Security &amp; Encryption</td>
+  </tr>
+<tr>
+  <td>Code Quality &amp; Static Analysis Tools</td>
+  <td>CI/CD &amp; DevOps-Aligned Architecture</td>
+  <td>Team Leadership &amp; Mentoring</td>
+</tr>
+<tr>
+  <td>Service-Oriented Architecture (SOA)</td>
+  <td>Process Redesign &amp; Automation</td>
+  <td>Modular System Design</td>
+</tr>
+</table>
+<h2>Technical Proficiencies</h2>
+<p>
+  <strong>Programming &amp; Scripting:</strong> C, C++, Python, Java, C#, Perl, Shell Scripting | <strong>Embedded Software:</strong> Embedded Linux, Nucleus RTOS, Device Drivers | <strong>Networking &amp; APIs:</strong> TCP/UDP/IP, REST APIs, OpenAPI, WebSockets | <strong>Application Development:</strong> Python, Flask, ASP.NET, C, C++, Java | <strong>Automation &amp; Testing:</strong> Jenkins, Android Automation, Microsoft Playwright, Google Chromium | <strong>IDE:</strong> VS Code, Eclipse | <strong>Version Control:</strong> Git, SVN | <strong>Methodologies:</strong> Agile, Scrum, Jira, Confluence | <strong>GUI:</strong> Qt (MCUs, QML, C++ Widgets), OpenGL ES, GLSL, Windows Forms, GMap.NET, SlimDX
+</p>
+<h2>Professional Experience</h2>
+<h3 class="clearfix"><span class="job-title">Lead Software Engineer | Afiniti – Pakistan</span><span class="job-date">Jun 2024 – Dec 2025</span></h3>
 <ul>
-<li>Developed SHM (Shared Memory) size estimator tool for call routing entities.</li>
-<li>Contributed to watchdog and arbiter services.</li>
-<li>Supported Afiniti Switch Interface service for NICE InContact CX.</li>
-<li>Implemented PII (Personally Identifiable Information) data protection.</li>
+  <li>Increased development performance using enterprise LLMs with GitHub Copilot in VS Code to rapidly deliver features, implement unit tests, review code, analyse logs, debug issues, and leverage MCP servers to optimise AI tool usage.</li>
+  <li>Eliminated chronic Linux VM instability issues on Windows laptops by investigating root causes, implementing solutions with IT, and escalating critical blockers to senior leadership, boosting engineer productivity and operational efficiency.</li>
+  <li>Developed PII protection in Nice In-Contact CX switch interface, reinforcing data security and reducing data breaches.</li>
+  <li>Expedited testing and verification of code changes using Docker containers and Dev-Containers extension in VS Code.</li>
+  <li>Augmented customer experiences and ensured consistent performance by overseeing the deployment of Afiniti Switch Interface services, enabling seamless operations in high-volume Nice In-Contact CX environments.</li>
+  <li>Optimised customer support operations by creating a detailed OpenAPI document, bridging knowledge gaps, reducing communication overhead, and enabling successful switch interface testing in new customer environments.</li>
+  <li>Contributed to execution and bug fixes of watchdog and arbiter systems for smooth process monitoring and arbitration.</li>
+  <li>Managed the end-to-end development and delivery of a scalable Shared Memory (SHM) size estimation tool that improved capacity forecasting and resource efficiency for mission-critical call routing systems.</li>
 </ul>
-<div class="skills-inline">Skills: C/C++, CMake, Linux, WSL, Docker, REST API, OpenAPI, WebSockets</div>
-</div>
-<div class="job">
-<div class="job-header"><div>SlashNext – Full-time</div><div>Dec 2023 – May 2024</div></div>
-<div class="job-subheader"><div>Principal Software Engineer</div><div>Lahore, Pakistan</div></div>
+<h3 class="clearfix"><span class="job-title">Principal Software Engineer | SlashNext – Lahore, Pakistan</span><span class="job-date">Dec 2023 – May 2024</span></h3>
 <ul>
-<li>Contributed to backend cloud services for detection of malicious URLs.</li>
+  <li>Added new features in cloud backend services to detect/block URLs in enterprise emails, fortifying security posture.</li>
+  <li>Efficiently completed all projects in tight deadlines, driving consistent progress and meeting stakeholder expectations.</li>
 </ul>
-<div class="skills-inline">Skills: Python, Flask, Linux, MongoDB, C/C++, Chromium, Playwright</div>
-</div>
-<div class="job">
-<div class="job-header"><div>Siemens Industry Software (Mentor Graphics) – Full-time</div><div>Oct 2014 – Nov 2023</div></div>
-<div class="job-subheader"><div>Senior Technical Lead Engineer</div><div>Lahore, Pakistan</div></div>
+<h3 class="clearfix"><span class="job-title">Senior Technical Lead Engineer | Mentor Graphics – Lahore, Pakistan</span><span class="job-date">Feb 2021 – Nov 2023</span></h3>
 <ul>
-<li>Acted as Scrum Master for a cross-functional team.</li>
-<li>Ported OpenSSL 3.x to Nucleus 4.x.</li>
-<li>Created Jenkins jobs for OpenSSL unit tests on <a href="https://www.qemu.org/">QEMU</a> and multiple SoCs.</li>
-<li>Led <a href="https://www.forescout.com/research-labs/nucleus-13/">Nucleus:13 Vulnerabilities</a> fixes for Nucleus legacy customers.</li>
-<li>Explored Qt for MCUs and prepared Nucleus support roadmap.</li>
+  <li>Increased team performance and business productivity by optimi s ing sprint planning, stand ups, and retrospectives.</li>
 </ul>
-</div>
-<div class="job">
-<div class="job-subheader"><div>Technical Lead Engineer</div><div>Aug 2016 – Jan 2021</div></div>
+<p><strong>Project: Security Add-on for Nucleus RTOS</strong></p>
 <ul>
-<li>Ported OpenSSL 1.1.1 to Nucleus 3.x and 4.x.</li>
-<li>Automated VPN server testing and Android workflows using Automate.</li>
-<li>Ported FAT RAM Disk driver to Nucleus 4.1.</li>
-<li>Developed unit tests for safety graphics rendering.</li>
+<li>Streamlined and accelerated OpenSSL upgrade integration for Nucleus RTOS by streamlining workflows, automating 90% of upgrade steps and 70% of testing, cutting release cycles from months to a single 3 week sprint.</li>
+<li>Delivered a fully ported OpenSSL 3.x solut ion on Nucleus 4.x, elevating encryption support and system interoperability.</li>
+<li>Executed OpenSSL version upgrades across legacy Nucleus systems, improving system reliability and security posture.</li>
+<li>Completed the development of automated Jenkins pipelines to execute OpenSSL unit tests on the Nucleus platform across QEMU, Cyclone V SoC, P1015, Sabre Lite, and UltraZed EG, ensuring consistent build quality.</li>
 </ul>
-</div>
-<div class="job">
-<div class="job-subheader"><div>Senior Software Development Engineer</div><div>Oct 2014 – Jul 2016</div></div>
+<p><strong>Project: Nucleus:13 Vulnerabilities Fixes</strong></p>
 <ul>
-<li>Optimized Qt C++ Widget applications for Quest Medical’s <a href="https://www.questmedical.com/mps3/perfusionists-nd/">Active Monitoring Controller (AMC)</a>.</li>
-<li>Ported Qt 5.6.0 to Nucleus RTOS.</li>
-<li>Developed <a href="https://github.com/asali23/opengl_demos.git">OpenGL demos</a> for GPU testing.</li>
-<li>Developed <a href="https://www.nxp.com/video/mentor-graphics-industrial-automation:MENTOR-GRAP-DEMO-VIDEOS-2016">Industrial Tank Automation Demo</a> for Mentor Embedded Linux (MEL)</li>
+<li>Exe cuted targeted security patches for 13 Nucleus vulnerabilities, strengthening system integrity for legacy customers.</li>
 </ul>
-<p><strong>Award:</strong> Best Technical Support Award (January 2016)</p>
-</div>
-<div class="job">
-<div class="job-header"><div>AEDesign</div><div>Aug 2013 – Oct 2014</div></div>
-<div class="job-subheader"><div>Software Developer, Control Systems</div><div>Lahore, Pakistan</div></div>
+<p><strong>Project: Qt for MCUs</strong></p>
 <ul>
-<li>Developed embedded Linux C++ application for <a href="https://www.aedesign.com.pk/AVCASSmini.html">AVCASS Mini</a> robot PID control.</li>
-<li>Implemented TCP/IP and UDP/IP communication.</li>
-<li>Developed Windows C# application using Xbox controller and Google Maps.</li>
+<li>Established integration feasibility for Qt for MCUs on Nucleus RTOS through comprehensive source code and toolchain evaluation, reducing technical risk for future product releases.</li>
 </ul>
-</div>
-<div class="job">
-<div class="job-header"><div>Metro Cash and Carry</div><div>Mar 2013 – Aug 2013</div></div>
-<div class="job-subheader"><div>Business Applications Executive</div><div>Lahore, Pakistan</div></div>
+<h3 class="clearfix"><span class="job-title">Technical Lead Engineer | Mentor Graphics – Lahore, Pakistan</span><span class="job-date">Aug 2016 – Jan 2021</span></h3>
+<p><strong>Product: Security Add-on for Nucleus RTOS</strong></p>
+  <ul>
+    <li>Engineered the porting of OpenSSL 1.1.1 to Nucleus 3.x and 4.x, enhancing system security and compatibility.</li>
+  </ul>
+  <p><strong>Project: Ported a FAT RAM Disk driver to Nucleus 4.1</strong></p>
+  <ul>
+    <li>Ported a FAT RAM Disk driver to Nucleus 4.1, mounting into Nucleus 4.1, using the parameters from Device Tree Blob (DTB) for the underlying SoC.</li>
+  </ul>
+  <p><strong>Project: Test Automation of Nucleus VPN Server with Android</strong></p>
+  <ul>
+    <li>Developed an application that automated VPN setup on Nucleus, reducing manual errors and accelerating test cycles.</li>
+    <li>Automated Android VPN workflows via Automate App, ensuring consistent performance checks and faster testing.</li>
+    <li>Created scripts and added test cases in Scaptic framework to trigger Automate App flows on Android for consistent and reliable testing of Android VPN client with Nucleus RTOS VPN service.</li>
+  </ul>
+  <p><strong>Projects: OpenVX Test Suite Evaluation 2017</strong></p>
+  <ul>
+    <li>Evaluated OpenVX architecture to develop targeted test cases, ensuring thorough verification of the 2017 version.</li>
+  </ul>
+  <p><strong>Products: Qt Framework Add-on for Nucleus RTOS</strong></p>
+  <ul>
+    <li>	Developed a streamlined, repeatable process for Qt open-source upgrades integration into Nucleus RTOS, slashing manual completion time from months to weeks and significantly improving system reliability through automation.</li>
+    <li>Orchestrated automation of repetitive tasks via Jenkins, freeing team resources for higher-value engineering activities.</li>
+    <li>Improved SDLC process by fixing Eclipse plugin bugs, ensuring reliable builds and seamless Qt application deployment.</li>
+    <li>Delivered unit tests for safety graphics rendering system, reinforcing the graphics module accuracy and performance.</li>
+  </ul>
+<h3 class="clearfix"><span class="job-title">Senior Software Development Engineer | Mentor Graphics – Lahore, Pakistan</span><span class="job-date">Oct 2014 – Jul 2016</span></h3>
+<p><strong>Projects: Nucleus Qt C++ Applications Optimisation for AMC & Industrial Tank Automation Demo</strong></p>
 <ul>
-<li>Automated MIS reports using C# and ASP.NET.</li>
+  <li>Transformed application performance through strategic optimisation of Qt C++ widgets on Nucleus RTOS, achieving measurable improvements in efficiency, reliability, and overall user experience.</li>
+  <li>Earned Best Technical Support Award (January 2016) by delivering timely and high-quality technical assistance.</li>
+  <li>Designed a fully functional industrial tank automation demo, illustrating adjusted control workflows and system reliability.</li>
 </ul>
-</div>
-<div class="job">
-<div class="job-header"><div>Xelleration</div><div>Jun 2012 – Feb 2013</div></div>
-<div class="job-subheader"><div>Software Engineer</div><div>Lahore, Pakistan</div></div>
+<p><strong>Product: Qt Framework Add-on for Nucleus RTOS</strong></p>
 <ul>
-<li>Developed shopping cart using SharePoint 2010 custom web parts.</li>
+  <li>Optimised GUI performance by porting Qt 5.6.0 to Nucleus 2016.05, delivering responsive and reliable user interfaces.</li>
+  <li>Built automated Qt testing pipelines for Nucleus, ensuring consistent results across emulated and hardware platforms.</li>
+  <li>Devised high-fidelity OpenGL test applications, enabling performance benchmarking of Qt with GPU on Nucleus RTOS.</li>
 </ul>
-</div>
-<div class="job">
-<div class="job-header"><div>LUMS</div><div>Aug 2011 – Jan 2012</div></div>
-<div class="job-subheader"><div>Graduate Teaching Assistant</div><div>Lahore, Pakistan</div></div>
+<h3 class="clearfix"><span class="job-title">Software Developer – Control Systems | AEDesign – Lahore, Pakistan</span><span class="job-date">Aug 2013 – Oct 2014</span></h3>
+<p><strong>Product: AVCASS Mini Robot / TS-7800 Embedded Linux C++ Application / Windows C# Application</strong></p>
 <ul>
-<li>Conducted labs and tutorials for Introduction to Programming (C++).</li>
+  <li>Augmented robotic linear motion by developing a C++ application with an integrated PID control system.</li>
+  <li>Engineered network communication modules, enabling real-time control of the robot via TCP/IP and UDP/IP.</li>
+  <li>Delivered a hybrid control Application (C#) for Windows, facilitating rapid communication with the robot while maintaining precise control and reliable autonomous navigation.</li>
 </ul>
-<p><strong>Award:</strong> Best Teaching Assistant Award (January 2012)</p>
-</div>
-</section>
-<section>
+<h3 class="clearfix"><span class="job-title">Business Applications Executive | Metro Cash and Carry – Lahore, Pakistan</span><span class="job-date">Mar 2013 – Aug 2013</span></h3>
+<ul>
+  <li>Implemented end-to-end automation in MIS reporting using C# and ASP.NET, improving visibility of critical metrics.</li>
+</ul>
+<h3 class="clearfix"><span class="job-title">Software Engineer | Xelleration – Lahore, Pakistan</span><span class="job-date">Jun 2012 – Feb 2013</span></h3>
+<p><strong>Product: A shopping cart web part for Microsoft SharePoint</strong></p>
+<ul>
+  <li>Delivered a ready-to-use shopping-cart web part for rapid enablement of e-commerce in Microsoft SharePoint sites.</li>
+</ul>
+    <p class="clearfix" style="margin-left: 20px; font-style: italic;"><span class="job-title">Additional Experience as Graduate Teaching Assistant at LUMS – Lahore, Pakistan</span><span class="job-date">Aug 2011 – Jan 2012</span></p>
 <h2>Education</h2>
-<p><strong>LUMS</strong> — Bachelor of Science (Honours) in Computer Engineering<br />Aug 2007 – Jun 2011, Lahore, Pakistan</p>
-<ul>
-<li>Placed on Dean’s Honour List (Nov 2008 – May 2010)</li>
-<li>Senior Year Project: Visual Aid for Robotic Arm in Landmines Detection</li>
-</ul>
-<p><strong>The Cardinal School</strong> — GCE A Level<br />Aug 2005 – Jun 2007, Lahore, Pakistan</p>
-<p><strong>Crescent Model School</strong> — GCE O Level<br />Apr 2003 – Jun 2005, Lahore, Pakistan</p>
-</section>
-<section>
-<h2>Language Skills</h2>
-<ul>
-<li>English</li>
-<li>Urdu (Mother language)</li>
-</ul>
-</section>
-<section>
-<h2>Other Skills</h2>
-<ul>
-<li>Clear communication</li>
-<li>Good in coaching and presenting</li>
-<li>Supportive and collaborative</li>
-<li>Welcome change, new ideas and debate</li>
-<li>Persuasion and negotiation</li>
-</ul>
-</section>
-</div>
+<p><span class="job-title"><strong>Bachelor of Science (Honours) in Computer Engineering</strong> | LUMS – Lahore, Pakistan</span><span class="job-date">Jun 2011</span></p>
+<br>
 </body>
 </html>

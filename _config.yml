@@ -1,0 +1,6 @@
+theme: jekyll-theme-minimal
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+mermaid: true

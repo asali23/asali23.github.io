@@ -3,4 +3,4 @@
 [Resume](resume.pdf)   |   [GitHub: asali23](https://github.com/asali23)    |   [LinkedIn: AsadAliAmjad](https://www.linkedin.com/in/AsadAliAmjad/)
 
 ## Articles
-- [Automating Open-Source Integration](articles/automating%20opensource%20integration.md)
+- [Automating Open-Source Integration](articles/automating-opensource-integration.md)

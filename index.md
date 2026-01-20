@@ -4,3 +4,4 @@
 
 ## Articles
 - [Automating Open-Source Integration](articles/automating-opensource-integration.md)
+- [Architecting a Traceable Software Supply Chain](articles/architecting-a-traceable-software-supply-chain.md)

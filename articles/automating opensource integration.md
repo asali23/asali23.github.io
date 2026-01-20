@@ -1,3 +1,8 @@
+---
+layout: default
+title: Automating Open-Source Integration
+---
+
 # Automating Open-Source Integration: Reducing Months of Work to a Single Sprint
 
 > **Executive Summary**

@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Architecting a Traceable Software Supply Chain: The Tag-Based Git Submodule Strategy"
+---
+
 # Architecting a Traceable Software Supply Chain: The Tag-Based Git Submodule Strategy
 
 ## From Automation to Governance

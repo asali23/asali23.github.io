@@ -1,0 +1,5 @@
+.main-container {
+  max-width: clamp(50ch, 80ch, 120ch);
+  margin: auto;
+  padding: 1rem;
+}

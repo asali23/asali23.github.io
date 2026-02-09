@@ -12,3 +12,4 @@ title: Asad Ali Amjad
 - [Automating Open-Source Integration](articles/automating-opensource-integration.md)
 - [Architecting a Traceable Software Supply Chain](articles/architecting-a-traceable-software-supply-chain.md)
 - [True Sprint Velocity - Making Sprint Planning Predictable and Data-Driven](articles/sprint-planning-framework-true-sprint-velocity.md)
+- [What I Learned From the Best Manager I’ve Ever Had](articles/management-lessons.md)
